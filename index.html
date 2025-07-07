@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pradhakshini Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
+      padding: 25px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    header h2 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color:lightskyblue;
+      transform: scale(1.05);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
+    .profile h1 {
+      font-size: 30px;
+      color: #222;
+    }
+
+    .about, .projects {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .about h3, .projects h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #444;
+      border-left: 5px solid #ff6600;
+      padding-left: 10px;
+    }
+
+    .about p {
+      margin-bottom: 10px;
+    }
+
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-item {
+      width: 300px;
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .project-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-item p {
+      padding: 12px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    details.section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    details summary {
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      color: #444;
+      padding-bottom: 10px;
+    }
+
+    details p, details a {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    details a:hover {
+      color:lightskyblue;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #4a4a4a;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .profile img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .project-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Pradhakshini's Portfolio</h2>
+  </header>
+
+  <nav>
+    <a href="./education.html">Education</a>
+    <a href="./project.html">Projects</a>
+    <a href="./skill.html">Skills</a>
+    <a href="./certifications.html">Certifications</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./htmlproject.html">Internship</a>
+  </nav>
+
+  <div class="container">
+    <section class="profile">
+      <img src="./photo.jpeg" alt="Profile Photo">
+      <h1>Pradhakshini P</h1>
+      <p>I'm a frontend developer</p>
+      <p>B.Tech in Artificial Intelligence and Data Science</p>
+    </section>
+
+    <section class="about">
+      <h3>About Me</h3>
+      <p>
+        Hello! I’m Pradhakshini, passionate about technology and innovation.
+        I'm currently pursuing B.Tech in Artificial Intelligence and Data Science.
+        I love solving real-world problems through code, machine learning, and creative thinking.
+        I love thinking critically, communicating clearly, and turning ideas into action. I approach every task with curiosity, consistency, and care — qualities that I believe define a true tech enthusiast.
+      </p>
+      <p>
+        I enjoy working on Python projects, data analysis, and building smart solutions. 
+        I'm always curious, always learning, and always building.
+      </p>
+    </section>
+
+    <details class="section">
+      <summary>🔗 Profile Links</summary>
+      <div class="section-content" id="profile-links">
+        <p><strong>Email:</strong> kit27.ad40@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8248601404</p>
+        <p><a href="https://github.com/Pradha-glitch" target="_blank">GitHub: github.com/Pradha-glitch</a></p>
+        <p><a href="https://www.linkedin.com/in/pradhakshini-p-bb00a3292" target="_blank">LinkedIn: linkedin.com/in/pradhakshini-p</a></p>
+        <p><a href="https://www.codechef.com/users/pradhakshini40" target="_blank">CodeChef: codechef.com/users/pradhakshini40</a></p>
+        <p><a href="https://github.com/Pradha-glitch" target="_blank">Leetcode: github.com/Pradha-glitch</a></p>
+        <p><a href="https://codolio.com/profile/pradha_98" target="_blank"> Codolio: https://codolio.com/profile/pradha_98</a></p>
+        <p><a href="https://www.hackerrank.com/profile/kit27_ad40" target="_blank">Hackerrank: https://www.hackerrank.com/profile/kit27_ad40</a></p>
+      </div>
+    </details>
+  </div>
+
+  <footer>
+    Contact: pradhakshini68@gmail.com | Location: India
+  </footer>
+  <button onclick="toggleMode()" style="position: fixed; top: 10px; right: 10px;">🌓</button>
+<script>
+    function toggleMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+
+<style>
+  .dark-mode {
+    background-color: #121212;
+    color:palevioletred;
+  }
+
+  .dark-mode header,
+  .dark-mode nav,
+  .dark-mode footer {
+    background-color: #1a1a1a;
+  }
+
+  .dark-mode .profile h1 {
+    color:palevioletred;
+  }
+
+  .dark-mode .profile p {
+    color: palevioletred; 
+  }
+
+  .dark-mode a {
+    color:palevioletred;
+  }
+
+  .dark-mode a:hover {
+    color:black;
+  }
+  body, header, nav, footer, .profile h1, .profile p {
+    transition: all 0.3s ease-in-out;
+}
+
+</style>
+
+</body>
+
+</html>
